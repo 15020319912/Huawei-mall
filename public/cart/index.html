@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<meta name='viewport' content='width=device-width' />
+		<link rel="stylesheet" href="/static/reset.css" />
+		<link rel="stylesheet" type="text/css" href="../nav/index.css"/>
+		<link rel="stylesheet" href="index.css" />
+	</head>
+	<body>
+		
+		<!-- 购物车显示 -->
+		<div class="cart">
+			<div class="header">
+				<span>购物车</span>
+				<span class="right">编辑</span>
+				<span class="right-b">完成</span>
+			</div>
+			
+			<!-- 用户未登录	 -->
+			<div class="cart-unlogin">
+				<div class="cart-login">
+					<span><img src="../images/cart/new-cart.png" /></span>
+					<span class="content-wrapper">
+						<p>您的购物车没有商品</p>
+						<span class="go"><a href="../list/index.html">去购物</a></span>
+						<p>或者您可以先进行<a href="../login/index.html" class="gologin">登录>></a></p>
+					</span>
+				</div>
+					
+			</div>
+			
+			<!-- 用户登录未选商品 -->
+			<div class="cart-empty">
+				<div class="cart-login">
+					<span><img src="../images/cart/new-cart.png" /></span>
+					<span class="content-wrapper">
+						<p>您的购物车没有商品</p>
+						<span class="go"><a href="../home/index.html">去购物</a></span>
+					</span>
+				</div>
+			</div>
+			
+			<!--  -->
+			<div class="selected">
+			</div>
+			
+			<!-- 结算 -->
+			<div class="settlement-wrapper clearfix">
+				<span class="check-wrapper">
+					<span class="check1"></span>
+					<p class="whole">全选</p>
+				</span>
+				<div class="float-wrapper">
+					<span class="total-wrapper">
+						<span class="total">总计:</span>
+						￥<span class="total-price">0</span>
+					</span>
+					<a href="../orderConfirm/index.html" class="sn">
+						<span class="settlement">结算</span>
+						(<span class="number">0</span>)
+					</a>
+				</div>
+			</div>
+			<!-- 删除 -->
+			<div class="delete-wrapper clearfix">
+				<span class="check-wrapper">
+					<span class="check3"></span>
+					<p class="whole">全选</p>
+				</span>
+				<div class="float-wrapper">
+					<a href="#" class="sn">
+						<span class="delete">删除</span>
+					</a>
+				</div>
+			</div>
+			
+			
+			<div class='footer'>
+				<ul class="nav">
+					<li>
+						<a href="../home/index.html">
+							<i></i>
+							<span>首页</span>
+						</a>
+					</li>
+					<li>
+						<a href="../category/index.html">
+							<i></i>
+							<span>分类</span>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<i></i>
+							<span>购物车</span>
+						</a>
+					</li>
+					<li>
+						<a href="../profile/index.html">
+							<i></i>
+							<span>个人</span>
+						</a>
+					</li>
+				</ul>
+			</div>
+			
+		</div>
+		
+		
+		<script src="../static/jQuery-3.4.0.js"></script>
+		<script src="../static/jQuery-extend.js"></script>
+		<script src="../nav/index.js"></script>
+		<script src="index.js"></script>
+		
+	</body>
+</html>

@@ -1,0 +1,335 @@
+.profile {
+	background-color: #F6F6F6;
+	display: flex;
+	width: 100%;
+	height: 100%;
+	flex-direction: column;
+}
+.content-wrapper {
+	position: relative;
+	flex-grow: 1;
+	overflow: auto;
+}
+.userinfo {
+	height: 200px;
+	background-color: #CA141D;
+}
+.userinfo>.top-left {
+	padding: 10px 16px;
+	position: fixed;
+	top: 0;
+	left: 0;
+}
+.userinfo>.top-right {
+	padding: 10px 16px;
+	position: fixed;
+	top: 0;
+	right: 0;
+}
+.userinfo>.top-left>.img-name {}
+.userinfo>.top-left>.u-name {}
+.userinfo>.top-right>.setting {
+	float: right;
+	display: inline-block;
+	background-image: url(../images/profile/icon_setting.png);
+	width: 27px;
+	height: 27px;
+	background-size: 100% 100%;
+}
+.userinfo>.top-right>.shortcut {
+	float: right;
+	margin-left: 10px;
+	display: inline-block;
+	background-image: url(../images/profile/xaizai.png);
+	width: 27px;
+	height: 27px;
+	background-size: 100% 100%;
+}
+.userinfo>.content {
+	padding-top: 50px;
+	padding-left: 16px;
+	height: 70px;
+}
+.userinfo>.content>.head {
+	width: 70px;
+	border-radius: 50%;
+}
+.userinfo>.content>span {
+	display: inline-block;
+	vertical-align: top;
+	width: 140px;
+	padding-top: 10px;
+}
+.userinfo>.content>span>a {
+	display: inline-block;
+	font-size: 23px;
+	color: white;
+}
+.userinfo>.content>span>span {
+	display: inline-block;
+	width: 140px;
+	padding-top: 3px;
+	vertical-align: top;
+}
+.i-vip {
+	display: inline-block;
+	background-image: url(../images/profile/Vo.gif);
+	width: 23px;
+	height: 23px;
+	background-size: 100% 100%;
+	vertical-align: middle;
+}
+.outer {
+	font-size: 14px;
+	color: white;
+	background-color: rgba(0, 0, 0, 0.1);
+	border-radius: 10px;
+	padding: 3px 5px;
+}
+.outer>i {
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	background-image: url(../images/profile/qiandao.png);
+	background-size: 100% 200%;
+	vertical-align: text-bottom;
+}
+.outer>span {
+	vertical-align: text-bottom;
+}
+.userinfo>.content>i {
+	float: right;
+	margin-top: 35px;
+	display: inline-block;
+	width: 105px;
+	height: 35px;
+	background-image: url(../images/profile/quanyi.png);
+	background-size: 100% 100%
+	
+}
+
+/*  */
+.property {
+	position: absolute;
+	top: 170px;
+	left: 5px;
+	width: 370px;
+	height: 80px;
+	margin: 0 16px;
+	background-color: white;
+	border-radius: 15px;
+}
+.property>ul {
+	display: flex;
+	height: 100%;
+	justify-content: space-between;
+	align-items: center;
+}
+.property>ul>li {
+	text-align: center;
+	width: 33.3333%;
+	
+}
+.property>ul>li.integral-wrapper {
+	position: relative;
+}
+.property>ul>li.integral-wrapper:after, .property>ul>li.coupon-wrapper:after {
+	content: "";
+    width: 1px;
+    height: 1.5rem;
+    background-color: #eaeaea;
+    position: absolute;
+    right: 0;
+    top: 30%;
+    
+}
+.property>ul>li.coupon-wrapper {
+	position: relative;
+}
+.property>ul>li.vouchers-wrapper {}
+.property>ul>li>.p1 {
+	font-size: 1.125rem;
+}
+.property>ul>li>.p2 {
+	padding-top: 5px;
+	font-size: 0.8125rem;
+}
+
+
+/* 我的订单 */
+.my-order {
+	margin: 60px 16px 0 16px;
+	background-color: white;
+	border-radius: 10px;
+}
+.my-order>.h {
+	display: flex;
+	justify-content: space-between;
+	padding: 10px 10px 0 10px;
+}
+.my-order>.h>span {
+	font-weight: bold;
+}
+.my-order>.h>a {
+	padding-top: 5px;
+	font-size: 0.875rem;
+	color: #000000;
+}
+.my-row {
+	padding: 10px 10px;
+}
+.my-row>ul {
+	display: flex;
+	align-items: center;
+	height: 70px;
+	font-size: 0;
+}
+.my-row>ul>li {
+	width: 20%;
+	font-size: 0.875rem;
+	text-align: center;
+}
+li.wait1 {}
+li.wait2 {}
+li.wait3 {}
+li.wait4 {}
+li.wait5 {}
+
+li.wait1>a {}
+li.wait2>a {}
+li.wait3>a {}
+li.wait4>a {}
+li.wait5>a {}
+
+li>a>p.icon {
+	display: inline-block;
+	width: 46px;
+	height: 46px;
+	background-size: 100% auto;
+}
+li.wait1>a>p.icon {
+	background-image: url(../images/profile/my-order.png);
+}
+li.wait2>a>p.icon {
+	background-position: 0 25%;
+	background-image: url(../images/profile/my-order.png);
+}
+li.wait3>a>p.icon {
+	background-position: 0 50%;
+	background-image: url(../images/profile/my-order.png);
+}
+li.wait4>a>p.icon {
+	background-position: 0 75%;
+	background-image: url(../images/profile/my-order.png);
+}
+li.wait5>a>p.icon {
+	background-position: 0 100%;
+	background-image: url(../images/profile/my-order.png);
+}
+
+p.icon {}
+p.title {
+	font-size: 0.875rem;
+	color: #666666;
+}
+
+.swiper-container {
+    width: 370px;
+	border-radius: 10px;
+}
+.swiper-container>.swiper-wrapper>.swiper-slide>img {
+    width: 370px;
+}
+
+.icon {
+	width: 46px;
+}
+
+/* VMALL-我的服务 */
+.VMALL, .service {
+	margin: 10px 16px 0 16px;
+	background-color: white;
+	border-radius: 10px;
+}
+.VMALL>p, .service>p {
+	font-weight: bold;
+	padding: 10px 10px 0 10px;
+}
+.VMALL>ul, .service>ul {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 80px;
+	margin: ;
+}
+.VMALL>ul>li, .service>ul>li {
+	width: 25%;
+	text-align: center;
+}
+
+ul.top {
+	margin-top: 7px;
+}
+ul.bottom {
+	margin-top: 17px;
+	padding-bottom: 12px;
+}
+
+.service {
+	
+}
+.service>p {
+	display: flex;
+	justify-content: space-between;
+}
+.service>p>.fan {
+	font-weight: normal;
+	font-size: 0.875rem;
+	color: #666666;
+}
+.h3 {
+	height: 60px;
+	line-height: 60px;
+	text-align: center;
+}
+
+/* 为您推荐 */
+.recommend {
+	margin: 10px 16px 0 16px;
+	background-color: white;
+	border-radius: 10px;
+	text-align: center;
+}
+.recommend>.top>img {
+	width: 370px;
+	margin-bottom: 15px;
+	border-radius: 10px;
+}
+.recommend>.bottom>img {
+	width: 370px;
+	border-radius: 10px;
+}
+
+.word {
+	margin-top: 10px;
+	font-size: 0.75rem;
+	color: #666666; 
+	background-color: white;
+	text-align: center;
+	padding: 20px 0 30px 0;
+}
+.w1 {
+	font-size: 14px;
+}
+.w1>span {
+	padding: 0 5px 0px 5px;
+}
+.word>p {
+	padding: 2px;
+}
+
+/* 页脚 */
+.footer {
+	flex-shrink: 0;
+	height: 50px;
+}

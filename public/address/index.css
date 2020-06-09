@@ -1,0 +1,251 @@
+body {
+}
+
+.address-wrapper, .add-wrapper {
+	width: 100%;
+	height: 100%;
+}
+.add-wrapper {
+	display: none;
+}
+.address, .address-add  {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	background-color: #f9f9f9;
+}
+
+/* 头部 */
+.header {
+	flex-shrink: 0;
+	height: 50px;
+	padding: 0 18px;
+	position: relative;
+	background-color: white;
+}
+.header {
+	
+}
+.header-add {
+	display: none;
+}
+.header>a {
+	position: absolute;
+	top: 10px;
+	left: 30px;
+	width: 24px;
+	height: 24px;
+	background-image: url(../images/address/icon_left.png);
+	background-size: 1.7rem 1.7rem;
+	
+	
+}
+.header>span {
+	display: inline-block;
+    margin: 0 50px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    font-size: 18px;
+    color: #191919;
+	padding-left: 90px;
+}
+
+/* 内容 */
+.content, .content-add {
+	flex-grow: 1;
+	overflow: auto;
+	
+}
+.item {
+	background-color: white;
+	padding: 0 16px;
+	margin: 10px 0;
+}
+/*  */
+.item>.top {
+	padding: 15px 0;
+	border-bottom: 1px solid #eee;
+}
+.p-name {
+	font-size: 15px;
+	color: #333;
+	margin-bottom: 5px;
+}
+.p-address {
+	font-size: 13px;
+	color: #888;
+}
+/*  */
+.item>.bottom {
+	height: 42px;
+	line-height: 42px;
+	padding: 5px 0;
+}
+.item>.bottom>span {
+	float: left;
+}
+.item>.bottom>span>span {
+	font-size: 13px;
+	color: #666;
+	vertical-align: middle;
+}
+.check1, .check3, .check2, .check4  {
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	background-size: 100% 200%;
+	background-image: url(../images/cart/dc.png);
+	vertical-align: middle;
+}
+.check1, .check3 {}
+.check2, .check4 {
+	background-position: 0 20px;
+}
+
+/* item下bottom，edit和delete重复样式 */
+.item>.bottom>.edit, .item>.bottom>.delete {
+	display: inline-block;
+}
+.item>.bottom>.edit>i, .item>.bottom>.delete>i {
+	display: inline-block;
+	width: 24px;
+	height: 24px;
+	background-size: 100% 100%;
+	vertical-align: middle;
+}
+.item>.bottom>.edit>span, .item>.bottom>.delete>span {
+	display: inline-block;
+	font-size: 13px;
+	color: #666;
+	vertical-align: middle;
+}
+
+.item>.bottom>a {
+	float: right;
+}
+.item>.bottom>div {
+	float: right;
+}
+
+/* edit样式 */
+.item>.bottom>.edit {
+	
+}
+.item>.bottom>.edit>i {
+	background-image: url(../images/address/icon-edit.png);
+}
+.item>.bottom>.edit>span {
+	display: inline-block;
+}
+
+/* detele样式 */
+.item>.bottom>.delete {
+	margin-left: 20px;
+}
+.item>.bottom>.delete>i {
+	background-image: url(../images/address/icon-delete.png);
+}
+.item>.bottom>.delete>span {}
+
+/* 新增样式 */
+.add-content {
+	display: none;
+	
+	
+}
+.section {
+	background-color: white;
+	height: 200px;
+	width: 100%;
+	box-sizing: border-box;
+	margin: 10px 0;
+	padding: 0 18px;
+	border: none;
+	
+}
+.d1 {
+	height: 50px;
+	line-height: 50px;
+	border-bottom: 1px solid #EEEEEE;
+}
+.dt {
+	display: inline-block;
+	width: 20%;
+	font-size: 16px;
+}
+.dd {
+	display: inline-block;
+	font-size: 16px;
+	padding-left: 10px;
+}
+.dd>input {
+	font-size: 16px;
+}
+
+.cc {
+	height: 40px;
+	font-size: 0;
+	margin: 20px 0;
+	padding: 0 18px;
+}
+.cancel, .confirm {
+	display: inline-block;
+	width: 45%;
+	height: 40px;
+	line-height: 40px;
+	text-align: center;
+	border-radius: 25px;
+    font-size: 18px;
+}
+.cancel {
+	border: 1px solid rgba(51,51,51,0.3);
+	color: #333;
+}
+.confirm {
+	background-color: #CA141D;
+	color: white;
+	margin-left: 5%;
+}
+
+/* 底部 */
+.footer {
+	flex-shrink: 0;
+	height: 50px;
+	text-align: center;
+	padding: 5px 0;
+	box-sizing: border-box;
+}
+.add, .preserve {
+	width: 90%;
+	height: 40px;
+	line-height: 40px;
+	margin: 0 18px;
+	background-color: #CA141D;
+	color: white;
+	border-radius: 20px;
+}
+
+
+
+/* 表单 */
+.Validform_error {
+	background-color: white;
+}
+
+/* 错误信息 */
+.Validform_wrong {
+	padding-left: 5px;
+}
+.Validform_wrong {
+	margin-left: 3px;
+}
+
+/* 正确信息 */
+.Validform_right {
+	padding-left: 5px;
+}
+.Validform_checktip {
+	margin-left: 3px;
+}

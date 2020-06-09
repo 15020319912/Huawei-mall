@@ -1,0 +1,141 @@
+.container {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+}
+.header {
+	flex-shrink: 0;
+	height: 45px;
+	position: relative;
+}
+.wrap {
+	display: inline-block;
+	width: 83%;
+	height: 35px;
+	background-color: #F0F0F0;
+	margin: 5px 0 5px 20px;
+	border-radius: 20px;
+	text-align: center;
+	position: relative;
+}
+.wrap>i {
+	width: 40px;
+	font-size: 16px;
+	position: absolute;
+	top: 8px;
+	left: 0;
+}
+.wrap>input {
+	width: 80%;
+	height: 100%;
+	font-size: 15px;
+}
+.header>img {
+	position: absolute;
+	top: 8px;
+	right: 14px;
+	width: 29px;
+}
+
+
+/* 中间 */
+.content {
+	flex-grow: 1;
+	display: flex;
+	overflow: hidden;
+	border-top: 1px solid #ccc;
+	border-bottom: 1px solid #ccc;
+}
+/* 中间 - 左边 */
+.left { 
+	flex-shrink: 0;
+	width: 113px; 
+	overflow: auto; 
+}
+ul.category-main {
+}
+ul.category-main>li {
+	display: flex;
+	/* justify-content: center; */
+	align-items: center;
+	height: 58px;
+	
+}
+ul.category-main>li>a {
+	height: 20px;
+	width: 113px;
+	line-height: 20px;
+	font-size: 14px;
+	margin-left: 16px;
+	color: #444;
+}
+
+ul.category-main>li.active>a {
+	color: #e01d20;
+	border-right: 2px solid #E01D20;
+}
+
+
+/* 中间 - 右边 */
+.right { 
+	flex-grow: 1; 
+	padding: 10px;
+	background-color: #eee;
+	overflow: auto;
+}
+.right>img.avatar { 
+	width: 100%;
+	border-radius: 8px; 
+}
+.category-sub-wrapper {
+	margin-top: 10px;
+	border-radius: 8px;
+	background-color: #fff;
+	padding: 10px;
+}
+.category-sub-wrapper>h3 {
+	color: #333;
+	font-size: 13px;
+}
+ul.category-sub { 
+	margin-right: -10px; 
+}
+ul.category-sub>li {
+	float: left; 
+	width: 33.333333%;
+	box-sizing: border-box;
+	padding-right: 10px;
+	margin-top: 10px;
+	overflow: hidden;
+}
+ul.category-sub>li>a { 
+	display: block; 
+	text-align: center; 
+}
+ul.category-sub>li>a>img { 
+	width: 100%; 
+}
+ul.category-sub>li>a>span { 
+	font-size: 11px;
+	color: #666; 
+	text-align: center;
+	word-break: break-all;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	display: -webkit-box;
+	-webkit-line-clamp: 1;
+	-webkit-box-orient: vertical;
+	margin-top: 0.55rem;
+}
+
+/* 页脚 */
+.footer {
+	flex-shrink: 0;
+	height: 50px;
+}
+.footer>iframe { 
+	display: block; 
+	width: 100%; 
+	height: 100%; 
+} 

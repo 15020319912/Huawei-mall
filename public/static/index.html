@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<link rel="stylesheet" href="Validform.css">
+	</head>
+	<body>
+		
+		<form class="demoform">
+			<div>
+				<input type="password" value="" name="userpassword" datatype="*6-15" errormsg="密码范围在6~15位之间！" />
+				<br>
+			</div>	
+			<div>
+				<input type="text" placeholder="请输入用户名" datatype='*' nullmsg='*用户名不能为空' sucmsg='通过!' />
+			</div>
+				
+				<br>
+				<input type="password" placeholder="请输入密码" datatype='s3-10' nullmsg='*密码长度3-16位' errormsg="密码范围在6~15位之间！" />
+
+			
+			
+		</form>
+		
+		<script src="jQuery-3.4.0.js"></script>
+		<script src="Validform_v5.3.2.js"></script>
+		
+		<script>
+			$(".demoform").Validform({
+				tiptype: 3
+			});
+		</script>
+	</body>
+</html>

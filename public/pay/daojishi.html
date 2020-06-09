@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+		
+		<div id="timer" style="color: red;"></div>
+		
+		
+		<script>
+			var maxtime = 60*60 //一个小时,按照秒算
+			timer = setInterval("CountDown()",1000);
+			function CountDown() {
+				if(maxtime >= 0) {
+					minutes = Math.floor(maxtime/60);
+					seconds = Math.floor(maxtime%60);
+					msg = '距离结束还有' + minutes + '分' + seconds + '秒';
+					document.all["timer"].innerHTML=msg;
+					--maxtime;
+				} else {
+					clearInterval(timer);
+					console.log("结束");
+				}
+			}
+		</script>
+		
+	</body>
+</html>

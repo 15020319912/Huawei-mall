@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		
+		<title></title>
+		<meta name='viewport' content='width=device-width' />
+		<link rel="stylesheet" href="/static/reset.css" />
+		<link rel="stylesheet" href="../static/Validform.css">
+		<link rel="stylesheet" href="../cityPicker-master/cityPicker.css">
+		<link rel="stylesheet" href="index.css">
+	</head>
+	<body>
+		
+		<div class="address-wrapper">
+			<div class="address">
+				<!-- 头部 -->
+				<div class="header">
+					<a href="../profile/index.html"></a>
+					<span>管理收货地址</span>
+				</div>
+				<!-- 内容 -->
+				<div class="content"></div>
+				<!-- 底部 -->
+				<div class="footer">
+					<div class="add">新增地址</div>
+				</div>
+			</div>
+		</div>
+		
+		
+		
+		<!--  -->
+		<div class="add-wrapper">
+			<div class="address-add">
+				<div class="header">
+					<a href="#"></a>
+					<span>添加收货地址</span>
+				</div>
+				<div class="content-add">
+					<form  class="demoform">
+						<section class="section">
+							<dl class="d1">
+								<dt class="dt">收货人</dt>
+								<dd class="dd"><input type="text" class="receiveName" placeholder="请输入收货人名称" datatype='*' nullmsg='*必填' sucmsg='通过!' /></dd>
+							</dl>
+							<dl class="d1">
+								<dt class="dt">手机号码</dt>
+								<dd class="dd"><input type="text" class="receivePhone" placeholder="请输入11位手机号码"  datatype='m' nullmsg='*必填' errormsg="格式错误!"  /></dd>
+							<dl>
+							<dl class="d1">
+								<dt class="dt">所在地区</dt>
+								<dd class="dd"><input type="text" class="city receiveRegion" placeholder="请输入所在地区" datatype='*' nullmsg='*必填' /></dd>
+							</dl>
+							<dl class="d1">
+								<dt class="dt">详细地址</dt>
+								<dd class="dd"><input type="text" class="receiveDetail" placeholder="小区、门牌号等" datatype='*' nullmsg='*必填' /></dd>
+							</dl>
+						</section>
+					</form>
+					
+					<div class="cc">
+						<a href="#" class="cancel">取消</a>
+						<a href="#" class="confirm">确认</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		
+	
+		
+		
+		
+		
+		
+		
+		<script src="../static/jQuery-3.4.0.js"></script>
+		<script src="../static/jQuery-extend.js"></script>
+		<script src="../static/Validform_v5.3.2.js"></script>
+		<script src="../cityPicker-master/cityPicker.js"></script>
+		<script src="index.js"></script>
+		<script>
+			$(".city").CityPicker();
+		</script>
+	</body>
+</html>

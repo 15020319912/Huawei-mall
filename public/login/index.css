@@ -1,0 +1,147 @@
+body {
+	width: 100%;
+	height: 95%;
+	
+}
+
+.top-wrapper {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	margin: 16px 24px 50px 24px;
+}
+
+.wrap>img {
+	width: 40px;
+	margin-bottom: 16px;
+}
+.wrap>h3 {
+	font-size: 24px;
+}
+.wrap>p {
+	font-size: 14px;
+	color: rgba(0,0,0,0.5);
+}
+
+.gj-dq {
+	margin: 0 24px;
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 16px;
+}
+.sjh {
+	color: #999999;
+	font-size: 14px;
+}
+
+
+
+.content-wrapper {
+	margin: 0 24px;
+}
+
+
+.name-wrapper, .pwd-wrapper {
+	width: 100%;
+	border-bottom: 1.5px solid #F0F0F0;
+}
+
+.name, .pwd{
+	width: 200px;
+	height: 50px;
+	font-size: 18px;
+	color: #333;
+}
+.pwd {
+}
+.error {
+	color: red;
+}
+
+.container {
+	font-size: 14px;
+	color: #007dff;
+	font-weight: 700!important;
+	display: flex;
+	justify-content: space-between;
+	margin: 16px 0;
+}
+
+.select {
+	position: relative;
+}
+
+.off {
+	/* position: absolute;
+	top: 0;
+	left: 0; */
+	width: 24px;
+	height: 24px;
+}
+
+
+
+.btn-login, .btn-logon {
+	width: 100%;
+	height: 40px;
+	background-color: #007dff;
+	border-radius: 30px;
+	font-size: 16px;
+	font-weight: 700;
+}
+.btn-login {
+	margin-top: 40px;
+	margin-bottom: 16px;
+	background-color: #007dff;
+	color: white;
+}
+.btn-logon {
+	
+	background-color: #F0F0F0;
+	color: #007dff;
+}
+
+.bottom-wrapper {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.problem {
+	
+	margin-top: 16px;
+}
+.problem>a {
+	color: #007DFF;
+	font-weight: 700;
+}
+.other {
+	margin-top: 16px;
+	color: #999999;
+}
+.qq-zfb {
+	margin: 16px 0;
+}
+.qq-zfb>div {
+	display: inline-block;
+	text-align: center;
+	width: 68px;
+	height: 40px;
+	font-size: 0;
+}
+.qq-zfb>div>img {
+	width: 40px;
+}
+
+.bottom {
+	height: 16px;
+}
+.bottom>a {
+	font-size: 14px;
+	color: #007DFF;
+	font-weight: 700;
+}
+.bottom>span {
+	color: #A4A4A4;
+	margin: 0 16px;
+}

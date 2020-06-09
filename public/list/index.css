@@ -1,0 +1,222 @@
+.container {
+	display: flex;
+	height: 100%;
+	flex-direction: column;
+}
+
+/* 头部 */
+.top {
+	width: 100%;
+	height: 40px;
+	flex-shrink: 0;
+	display: flex;
+	background-color: #EEEEEE;
+	align-items: center;
+	position: relative;
+}
+.back {
+	width: 50px;
+	text-align: center;
+}
+.back>i {
+	font-size: 30px;
+}
+.search-wrapper {
+	flex-grow: 1;
+	height: 28px;
+	width: 100%;
+	background-color: white;
+	border-radius: 10px;
+	margin-right: 40px;
+}
+.search-wrapper>i {
+	line-height: 20px;
+	
+}
+.search {
+	width: 90%;
+	text-indent: 1em;
+}
+.mode {
+	display: none;
+	width: 40px;
+	height: 40px;
+	line-height: 40px;
+	text-align: center;
+	font-size: 26px;
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+.show {
+	display: block;
+}
+.mode-card {
+	
+}
+.mode-list {}
+
+/* 排序 */
+.order {
+	height: 40px;
+	flex-shrink: 0;
+	display: flex;
+	align-items: center; 
+	justify-content: space-around;
+	background-color: #EEEEEE;
+}
+.order>ul {
+	width: 100%;
+	float: left;
+	display: flex;
+	align-items: center; 
+	justify-content: space-around;
+}
+.order>ul>li {
+	 
+}
+.order>ul>li>i {
+	display: none;
+}
+.order>ul>li.asc>i.icon-sort-up {
+	display: inline-block;
+}
+.order>ul>li.desc>i.icon-sort-down {
+	display: inline-block;
+}
+.order>ul>li.active {
+	color: #E33233;
+}
+
+
+/* 商品 */
+.content {
+	flex-grow: 1;
+	overflow: hidden;
+	touch-action: pan-y;
+}
+
+.scroll-content {}
+
+ul.product-list {}
+ul.product-list>li {}
+ul.product-list>li>a {}
+
+.avatar-wrapper {
+	
+}
+.avatar-wrapper>img {
+	
+}
+
+
+ul.list {
+	overflow: hidden;
+}
+ul.list>li {}
+ul.list>li>a {
+	display: flex;
+	padding: 10px;
+}
+ul.list>li>a>.avatar-wrapper {
+	width: 150px;
+}
+ul.list>li>a>.avatar-wrapper>img.active {
+	width: 141px;
+}
+ul.list>li>a>.detail {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	
+}
+ul.list>li>a>.detail>.detail-top {
+	
+}
+ul.list>li>a>.detail>.detail-top>h3.name {
+	font-size: 15px;
+	color: #333333;
+}
+ul.list>li>a>.detail>.detail-top>p {
+	font-size: 13px;
+	color: #999999;
+	margin: 2px 0 0;
+}
+ul.list>li>a>.detail>.detail-bottom {
+	
+}
+ul.list>li>a>.detail>.detail-bottom>p {
+	color: #E33233;
+	font-size: 12px;
+}
+ul.list>li>a>.detail>.detail-bottom>p>span {
+	color: #E33233;
+	font-size: 17px;
+}
+ul.list>li>a>.detail>.detail-bottom>span.sale {
+	font-size: 12px;
+	color: #999999;
+}
+ul.list>li>a>.detail>.detail-bottom>span.rate {
+	font-size: 12px;
+	color: #999999;
+}
+
+
+ul.card {
+	font-size: 0;
+}
+ul.card>li {
+	width: 50%;
+	display: inline-block;
+}
+ul.card>li>a {
+}
+ul.card>li>a>.avatar-wrapper {
+	width: 150px;
+}
+ul.card>li>a>.avatar-wrapper>img.active {
+	width: 141px;
+}
+ul.card>li>a>.detail {
+	
+}
+ul.card>li>a>.detail>.detail-top {
+	
+}
+ul.card>li>a>.detail>.detail-top>h3.name {
+	font-size: 15px;
+	color: #333333;
+}
+ul.card>li>a>.detail>.detail-top>p {
+	font-size: 13px;
+	color: #999999;
+}
+ul.card>li>a>.detail>.detail-bottom {
+	
+}
+ul.card>li>a>.detail>.detail-bottom>p {
+	color: #E33233;
+	font-size: 12px;
+}
+ul.card>li>a>.detail>.detail-bottom>p>span {
+	color: #E33233;
+	font-size: 17px;
+}
+ul.card>li>a>.detail>.detail-bottom>span.sale {
+	font-size: 12px;
+	color: #999999;
+}
+ul.card>li>a>.detail>.detail-bottom>span.rate {
+	font-size: 12px;
+	color: #999999;
+}
+
+
+
+
+.info {
+	text-align: center;
+}
+
+
